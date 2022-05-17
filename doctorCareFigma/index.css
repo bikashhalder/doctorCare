@@ -15,10 +15,13 @@
 
 body {
   font-family: var(--ff-primary);
-  margin: 0;
+  margin: 0px;
   font-weight: 300;
   font-size: 1.125rem;
-  padding: 0;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.section {
   overflow-x: hidden;
 }
 .container {
@@ -109,6 +112,9 @@ nav ul {
 }
 /* when bar is not clicked */
 @media screen and (max-width: 675px) {
+  .section {
+    display: block;
+  }
   .navItem {
     display: none;
   }
@@ -128,6 +134,9 @@ nav ul {
   }
   .close-icon {
     display: none;
+  }
+  .logo {
+    font-size: 1rem;
   }
 }
 /* when bar is clicked */
@@ -165,8 +174,8 @@ nav ul {
   .navbar.responsive .btn-appointment {
     display: block;
     position: relative;
-    top: 50px;
-    left: 82px;
+    top: 40px;
+    left: 50px;
   }
 }
 .section1-content {
@@ -201,7 +210,7 @@ nav ul {
 .section1-col1-heading1 {
   color: var(--color-primary-dark);
 }
-.section1-numbers {
+.section2-numbers {
   display: flex;
   justify-content: space-around;
   padding: 0;
@@ -214,6 +223,7 @@ nav ul {
   .section1 {
     min-height: 1200px;
     position: relative;
+    height: auto;
   }
   .container {
     width: 95%;
@@ -263,21 +273,21 @@ nav ul {
     top: 35px;
     left: 50px;
   }
-  .section1-numbers {
+  .section2-numbers {
     flex-direction: column;
     width: 90%;
     position: relative;
     left: 20px;
-    bottom: 200px;
+    bottom: 233px;
     border-radius: 5px;
   }
-  .section1-numbers-col1 {
+  .section2-numbers-col1 {
     width: 100%;
   }
-  .section1-numbers-col2 {
+  .section2-numbers-col2 {
     width: 100%;
   }
-  .section1-numbers-col3 {
+  .section2-numbers-col3 {
     width: 100%;
   }
   .number {
@@ -397,7 +407,7 @@ nav ul {
 @media (max-width: 675px) {
   .section2 {
     width: 100%;
-    min-height: 1800px;
+    min-height: 1950px;
   }
   .section2-headings {
     position: relative;
